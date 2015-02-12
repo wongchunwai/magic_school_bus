@@ -1,0 +1,63 @@
+* {
+	font-size:23px;
+}
+
+body {
+	padding:0 10px 10px;
+	font-family:'Raleway',sans-serif;
+}
+
+input {
+	width:100%;
+	padding:15px;
+	outline:none;
+	box-sizing:border-box;
+}
+
+ul {
+	padding:0;
+}
+
+li {
+	list-style:none;
+	border-bottom:1px solid #eee;
+	padding:15px;
+}
+
+li span {
+	font-size:15px;
+	color:#999;
+}
+
+#bus_stop_result li {
+	cursor:pointer;
+	background:url(/incube8/images/arrow_right.png) center right 20px no-repeat;
+}
+
+#bus_stop_result li:hover {
+	background:#f4f4f4 url(/incube8/images/arrow_right.png) center right 20px no-repeat;
+}
+
+#bus_stop_result li div {
+	background:url(/incube8/images/bus_icon.png) center left no-repeat;
+	padding-left:60px;
+}
+
+#bus_detail_result li div {
+	background:url(/incube8/images/time_icon.jpg) center left no-repeat;
+	padding-left:60px;
+}
+
+#bus_detail_result {
+	display:none;
+}
+
+.bus_stop_no {
+	background:#f4f4f4;
+	cursor:pointer;
+	font-weight:700;
+}
+
+li span span {
+	color:red;
+}
