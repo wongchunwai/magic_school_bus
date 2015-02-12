@@ -47,7 +47,7 @@ class BusDetailController extends Controller {
 	 */
 	public function show($id)
 	{
-		$result = BusDetail::where('bus_stops_id', $id)->orderBy('number', 'ASC')->get(array("bus_stops_id","number",DB::raw('TIMESTAMPDIFF(MINUTE, NOW(), eta) as eta')));
+		$result = BusDetail::where('id', $id)->orderBy('number', 'ASC')->get(array("id","number",DB::raw('TIMESTAMPDIFF(MINUTE, NOW(), eta) as eta')));
 		
 		if (!$result->isEmpty())
 			return $result;
